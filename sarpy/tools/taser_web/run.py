@@ -1,7 +1,7 @@
 from algorithm_toolkit import app
 
 
-if (__name__) == '__main__':
+def main():
     import argparse
 
     parser = argparse.ArgumentParser(description='Development Server Help')
@@ -31,3 +31,7 @@ if (__name__) == '__main__':
         app_options["use_reloader"] = False
 
     app.run(**app_options)
+
+
+if __name__ == '__main__':
+    main()
